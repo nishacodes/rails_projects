@@ -1,0 +1,16 @@
+%p#notice= notice 
+
+%p 
+  %b Giver:
+  = @wink.giver 
+
+%p 
+  %b Receiver:
+  = @wink.receiver 
+
+%p 
+  %b Subtext:
+  = @wink.subtext 
+
+= link_to 'Edit', edit_wink_path(@wink) |
+= link_to 'Back', winks_path

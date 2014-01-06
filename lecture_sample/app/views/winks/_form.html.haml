@@ -1,0 +1,17 @@
+= form_for(@wink) do |f| 
+      
+  .field
+    = f.label :giver 
+    = f.text_field :giver
+  %br
+  .field
+    = f.label :receiver 
+    = f.text_field :receiver 
+  %br
+  .field
+    = f.label :subtext 
+    = f.text_area :subtext
+  %br
+  .actions
+    = f.submit
+  %br
