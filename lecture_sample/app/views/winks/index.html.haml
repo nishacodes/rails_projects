@@ -13,7 +13,7 @@
     %td= wink.subtext
     %td= link_to 'Show', wink
     %td= link_to 'Edit', edit_wink_path(wink)
-    %td= link_to 'Destroy', 'winks/#{@wink.id}', confirm: 'Are you sure?', method: :delete 
+    %td= button_to 'Destroy', "/winks/#{wink.id}", confirm: 'Are you sure?', method: :delete 
     <br/>
     <br />
 
