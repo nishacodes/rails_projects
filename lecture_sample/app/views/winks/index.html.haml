@@ -1,0 +1,21 @@
+%h1 Listing winks
+
+%table
+  %tr
+    %th Giver
+    %th Receiver
+    %th Subtext
+
+= @winks.each do |wink| 
+  %tr
+    %td= wink.giver 
+    %td= wink.receiver 
+    %td= wink.subtext
+    %td= link_to 'Show', wink
+    %td= link_to 'Edit', edit_wink_path(wink)
+    %td= link_to 'Destroy', wink, confirm: 'Are you sure?', method: :delete 
+
+
+<br />
+
+= link_to 'New Wink', winks_path

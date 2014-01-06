@@ -2,13 +2,13 @@ LectureSample::Application.routes.draw do
   resources :posts
 
   # wink routes
-  match 'winks/' => 'wink#index'
-  post 'winks/' => 'wink#create'
-  match 'winks/new' => 'wink#new'
-  match 'winks/id/edit' => 'wink#edit'
-  get 'winks/id/' => 'wink#show'
-  put 'winks/id/' => 'wink#update'
-  delete 'winks/id/' => 'wink#destroy'
+  match 'winks/' => 'winks#index'
+  post 'winks/' => 'winks#create'
+  match 'winks/new' => 'winks#new'
+  match 'winks/id/edit' => 'winks#edit'
+  get 'winks/id/' => 'winks#show'
+  put 'winks/id/' => 'winks#update'
+  delete 'winks/id/' => 'winks#destroy'
 
 
   # The priority is based upon order of creation:
