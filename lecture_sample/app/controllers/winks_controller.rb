@@ -15,8 +15,7 @@ class WinksController < ApplicationController
 
   def create
     @wink = Wink.new(params[:wink])
-    # @wink.save
-
+    
     respond_to do |format|
       if @wink.save
         format.html { redirect_to @wink, notice: 'Wink was successfully created.' }
